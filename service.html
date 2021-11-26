@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilal Party Profile.</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallary.css">
+</head>
+<body>
+
+    <!-- service section  -->
+    <section class="service" id="service">
+
+        <h1 class="heading">My Acessories.</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-car"></i>
+                <p>Benz,BMW,Jaguar</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-biking"></i>
+                <p>Activa,Access,Royal Enfield.</p>
+            </div>
+
+            <div class="box">
+                <i class="far fa-clock"></i>
+                <p>Rado,Rolex,Deniel Wellington</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-home"></i>
+                <p>bungalow,2 Row-houses.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-money-check-alt"></i>
+                <p>500k $</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-landmark"></i>
+                <p>London,LA,India.</p>
+            </div>
+
+
+        </div>
+
+    </section>
+<!-- theme toggler  -->
+
+<div class="theme-toggler">
+    <span style="background: linear-gradient(deeppink, purple);"></span>
+    <span style="background: linear-gradient(lightgreen, crimson);"></span>
+    <span style="background:linear-gradient(blueviolet, deeppink)"></span>
+    <span style="background:linear-gradient(coral, blueviolet)"></span>
+    <span style="background:linear-gradient(#999, #111)"></span>
+</div>
+
+
+<!-- type.js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+<script>
+    let themeColor = document.querySelectorAll('.theme-toggler span');
+    themeColor.forEach(color => color.addEventListener('click', () =>{
+        let background = color.style.background;
+        document.querySelector('body').style.background = background;
+    }));
+</script>
+
+</body>
+
+
+</html>
